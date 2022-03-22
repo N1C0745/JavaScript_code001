@@ -16,3 +16,5 @@ Ex.:
     
     
 R: total_sum = (2 + 4 + 8 =) 14
+
+And when the user decides to NOT input a number, the program will then proceed to assign a random number to the variable in question.
