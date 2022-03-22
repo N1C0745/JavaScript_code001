@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            font: normal 15pt Arial;
+        }
+        h1{
+            color: white;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1> Exercise 01 </h1>
+    <p1> Make a code that shows the result of a number plus himself for a certain number of times (all informed by the user).
+    {Completed}
+    </p1>
+    <script>
+        var number, times, before = 0
+        var option = window.confirm("Do you want to input a number?")
+        option == 1 ? number = Number(window.prompt("What's the number?")) : number = Math.floor(Math.random() * 1000)
+        before = number
+
+        window.alert(`${number} is the base.`)
+        option = window.confirm("Do you want to input the number of times?")
+        option == 1 ? times = Number(window.prompt("What's the number of times?")) : times = Math.floor(Math.random() * 10)
+
+        window.alert(`${times} is the number of times.`)
+        for(var i = 1; i < times; i++){
+            number = number++ 
+            before += number
+        }
+
+        window.alert(`The result was ${before}.`)
+    </script> 
+</body>
+</html>
